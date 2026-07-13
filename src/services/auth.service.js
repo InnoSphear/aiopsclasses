@@ -165,11 +165,13 @@ const authService = {
   async login(email, password, ipAddress, userAgent) {
     const user = await userRepository.findByEmail(email, '+password');
     if (!user) {
+      logger.warn(`Login attempt for non-existent email: ${email}`);
       throw new AuthenticationError('Invalid email or password');
     }
 
     const isPasswordValid = await comparePassword(password, user.password);
     if (!isPasswordValid) {
+      logger.warn(`Invalid password attempt for email: ${email}`);
       throw new AuthenticationError('Invalid email or password');
     }
 
@@ -193,7 +195,8 @@ const authService = {
       throw new AuthenticationError('Your account is not active. Please contact support at 6203818011 for details.');
     }
 
-    if (!user.isEmailVerified && config.server.env !== 'development') {
+    const smtpConfigured = config.email.user && config.email.pass;
+    if (!user.isEmailVerified && config.server.env !== 'development' && smtpConfigured) {
       throw new AuthenticationError('Please verify your email before logging in.');
     }
 
