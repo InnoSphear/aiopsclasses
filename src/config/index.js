@@ -1,9 +1,14 @@
+const clientUrls = (process.env.CLIENT_URL || 'http://localhost:5173')
+  .split(',')
+  .map((url) => url.trim().replace(/\/+$/, ''));
+
 const config = {
   server: {
     env: process.env.NODE_ENV || 'development',
     port: parseInt(process.env.PORT, 10) || 5000,
     apiVersion: process.env.API_VERSION || 'v1',
-    clientUrl: (process.env.CLIENT_URL || 'http://localhost:5173').replace(/\/+$/, ''),
+    clientUrls,
+    clientUrl: clientUrls[0],
   },
   database: {
     uri: process.env.MONGODB_URI || 'mongodb://localhost:27017/classplatform',
