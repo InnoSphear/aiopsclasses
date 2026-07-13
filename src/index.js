@@ -21,6 +21,7 @@ import { generalLimiter } from './middlewares/rateLimit.middleware.js';
 import setupRoutes from './routes/index.js';
 
 const app = express();
+app.set('trust proxy', 1);
 const httpServer = createServer(app);
 
 const allowedOrigins = config.server.clientUrls;

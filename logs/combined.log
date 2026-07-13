@@ -5718,3 +5718,27 @@
 {"level":"info","message":"API version: v1","service":"classplatform-backend","timestamp":"2026-07-13 22:19:32"}
 {"level":"info","message":"Client URL: https://classes.aiopsmedia.com","service":"classplatform-backend","timestamp":"2026-07-13 22:19:32"}
 {"level":"warn","message":"Mongoose disconnected from database","service":"classplatform-backend","timestamp":"2026-07-13 22:19:40"}
+{"level":"info","message":"Starting database seeding...","service":"classplatform-backend","timestamp":"2026-07-13 23:04:41"}
+{"level":"error","message":"MongoDB connection attempt 1/5 failed: querySrv ECONNREFUSED _mongodb._tcp.cluster0.4oba6yp.mongodb.net","service":"classplatform-backend","timestamp":"2026-07-13 23:04:41"}
+{"level":"info","message":"Retrying connection in 5 seconds...","service":"classplatform-backend","timestamp":"2026-07-13 23:04:41"}
+{"level":"error","message":"MongoDB connection attempt 2/5 failed: querySrv ECONNREFUSED _mongodb._tcp.cluster0.4oba6yp.mongodb.net","service":"classplatform-backend","timestamp":"2026-07-13 23:04:46"}
+{"level":"info","message":"Retrying connection in 5 seconds...","service":"classplatform-backend","timestamp":"2026-07-13 23:04:46"}
+{"level":"error","message":"MongoDB connection attempt 3/5 failed: querySrv ECONNREFUSED _mongodb._tcp.cluster0.4oba6yp.mongodb.net","service":"classplatform-backend","timestamp":"2026-07-13 23:04:51"}
+{"level":"info","message":"Retrying connection in 5 seconds...","service":"classplatform-backend","timestamp":"2026-07-13 23:04:51"}
+{"level":"error","message":"MongoDB connection attempt 4/5 failed: querySrv ECONNREFUSED _mongodb._tcp.cluster0.4oba6yp.mongodb.net","service":"classplatform-backend","timestamp":"2026-07-13 23:04:56"}
+{"level":"info","message":"Retrying connection in 5 seconds...","service":"classplatform-backend","timestamp":"2026-07-13 23:04:56"}
+{"level":"error","message":"MongoDB connection attempt 5/5 failed: querySrv ECONNREFUSED _mongodb._tcp.cluster0.4oba6yp.mongodb.net","service":"classplatform-backend","timestamp":"2026-07-13 23:05:01"}
+{"level":"info","message":"Starting database seeding...","service":"classplatform-backend","timestamp":"2026-07-13 23:05:16"}
+{"level":"info","message":"MongoDB Connected: ac-gakffu1-shard-00-00.4oba6yp.mongodb.net:27017/aiopsclasses","service":"classplatform-backend","timestamp":"2026-07-13 23:05:19"}
+{"level":"info","message":"Seeding roles...","service":"classplatform-backend","timestamp":"2026-07-13 23:05:19"}
+{"level":"info","message":"Created role: superadmin","service":"classplatform-backend","timestamp":"2026-07-13 23:05:20"}
+{"level":"info","message":"Created role: admin","service":"classplatform-backend","timestamp":"2026-07-13 23:05:20"}
+{"level":"info","message":"Created role: faculty","service":"classplatform-backend","timestamp":"2026-07-13 23:05:20"}
+{"level":"info","message":"Created role: mentor","service":"classplatform-backend","timestamp":"2026-07-13 23:05:20"}
+{"level":"info","message":"Created role: coordinator","service":"classplatform-backend","timestamp":"2026-07-13 23:05:20"}
+{"level":"info","message":"Created role: counselor","service":"classplatform-backend","timestamp":"2026-07-13 23:05:20"}
+{"level":"info","message":"Created role: sales","service":"classplatform-backend","timestamp":"2026-07-13 23:05:21"}
+{"level":"info","message":"Created role: student","service":"classplatform-backend","timestamp":"2026-07-13 23:05:21"}
+{"level":"info","message":"Role seeding complete: 8 created, 0 updated, 0 unchanged","service":"classplatform-backend","timestamp":"2026-07-13 23:05:21"}
+{"level":"info","message":"Seeding superadmin user...","service":"classplatform-backend","timestamp":"2026-07-13 23:05:21"}
+{"level":"info","message":"Superadmin user created: ujjwalkarmakar@aiopsmedia.com","service":"classplatform-backend","timestamp":"2026-07-13 23:05:21"}
