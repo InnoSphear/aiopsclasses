@@ -5650,3 +5650,7 @@
 {"level":"info","message":"GET /api/v1/messages/unread 200 102 - 35.304 ms","service":"classplatform-backend","timestamp":"2026-07-13 21:35:11"}
 {"level":"info","message":"Socket disconnected: nJ7XXKj4QDqhzF6GAAAB (transport close)","service":"classplatform-backend","timestamp":"2026-07-13 21:35:18"}
 {"level":"info","message":"Socket disconnected: D_Y4kktznr0ZbDISAAAF (transport close)","service":"classplatform-backend","timestamp":"2026-07-13 21:35:19"}
+{"level":"info","message":"MongoDB Connected: localhost:27017/classplatform","service":"classplatform-backend","timestamp":"2026-07-13 21:35:24"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"classplatform-backend","timestamp":"2026-07-13 21:35:24"}
+{"level":"info","message":"API version: v1","service":"classplatform-backend","timestamp":"2026-07-13 21:35:24"}
+{"level":"info","message":"Client URL: http://localhost:5173","service":"classplatform-backend","timestamp":"2026-07-13 21:35:24"}

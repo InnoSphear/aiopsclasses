@@ -1,4 +1,4 @@
-import Message from '../models/message.model.js';
+import Message from '../models/Message.model.js';
 import Batch from '../models/Batch.model.js';
 import { NotFoundError, ValidationError } from '../utils/apiError.js';
 
