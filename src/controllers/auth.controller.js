@@ -38,7 +38,7 @@ const authController = {
     return apiResponse.success(res, 'Login successful', {
       user: result.user,
       accessToken: result.accessToken,
-      refreshToken: config.server.env === 'development' ? undefined : result.refreshToken,
+      refreshToken: result.refreshToken,
     });
   }),
 

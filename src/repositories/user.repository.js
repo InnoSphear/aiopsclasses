@@ -7,7 +7,7 @@ class UserRepository extends BaseRepository {
   }
 
   async findByEmail(email, selectFields = '') {
-    let query = this.model.findOne({ email: email.toLowerCase(), isDeleted: false });
+    let query = this.model.findOne({ email: email.toLowerCase().trim(), isDeleted: false });
     if (selectFields) {
       query = query.select(selectFields);
     }
