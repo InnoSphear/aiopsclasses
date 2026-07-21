@@ -180,19 +180,19 @@ const authService = {
     }
 
     if (user.accountStatus === 'pending_payment') {
-      throw new AuthenticationError('Payment not completed. Please complete the payment to access the platform. For any queries, call: 6203818011');
+      throw new AuthenticationError('Payment not completed. Please complete the payment to access the platform. For any queries, call: 9717819001');
     }
 
     if (user.accountStatus === 'pending_verification') {
-      throw new AuthenticationError('Your account is under verification. Payment verification takes up to 1 working day. For any queries, call: 6203818011');
+      throw new AuthenticationError('Your account is under verification. Payment verification takes up to 1 working day. For any queries, call: 9717819001');
     }
 
     if (user.accountStatus === 'rejected') {
-      throw new AuthenticationError(`Your account has been rejected. ${user.rejectionReason || 'Please contact support.'} Call: 6203818011 for details.`);
+      throw new AuthenticationError(`Your account has been rejected. ${user.rejectionReason || 'Please contact support.'} Call: 9717819001 for details.`);
     }
 
     if (user.accountStatus !== 'active') {
-      throw new AuthenticationError('Your account is not active. Please contact support at 6203818011 for details.');
+      throw new AuthenticationError('Your account is not active. Please contact support at 9717819001 for details.');
     }
 
     const smtpConfigured = config.email.user && config.email.pass;

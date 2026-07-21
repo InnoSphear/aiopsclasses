@@ -3,7 +3,7 @@ import Role from '../models/Role.model.js';
 import logger from '../utils/logger.js';
 
 const SUPERADMIN_DATA = {
-  name: 'Ujjwal Karmakar',
+  name: 'Admin',
   email: 'ujjwalkarmakar@aiopsmedia.com',
   password: 'Admin@321',
   isEmailVerified: true,
